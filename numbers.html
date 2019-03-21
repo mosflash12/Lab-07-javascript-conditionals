@@ -9,20 +9,19 @@
 
       var numb = prompt(" Please Enter a Number!! Ex. '0123' or '3104'")
 
-      var z =  numb % 1000;
-      var x =  numb % 100;
-      var c =  numb % 10;
-      var v =  numb % 1;
+      var z =  numb % 1000 % 1000;
+      var x =  numb % 100 % 100;
+      var c =  numb % 10 % 10;
+      var v =  numb % 10000 ;
 
+      var a = z/100;
+      var b = x/10;
+      var f = v / 1000;
 
-      a = z % 1000;
-      b = x % 100;
-      d = c % 10;
-      e = v % 1;
-        console.log(Math.round(a) + " thousands ");
-        console.log(Math.round(b) + " hundreds ");
-        console.log(Math.round(d) + " tens ");
-        console.log(Math.round(e) + " ones ");
+        console.log(Math.round(f) + " thousands ");
+        console.log(Math.round(a) + " hundreds ");
+        console.log(Math.round(b) + " tens ");
+        console.log(Math.round(c) + " ones ");
 
 
 
