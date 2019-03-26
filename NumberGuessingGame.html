@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var titlin;
+      var number;
+      var correctNumber = 25;
+      var flag = true;
+
+
+//Number.isInteger(correctNumber)
+      while (titlin !== 25 && flag == true) {
+
+        titlin = prompt('This is a number guessing game. Try to guess the correct number');
+        //number = parseInt(titlin);
+
+        if (titlin == 25){
+
+          alert('This is the correct number!');
+          flag = false;
+          break;
+        }
+
+        else if(titlin  >= 0 && titlin <= 10){
+          alert('That number is way to low.');
+
+        }
+
+        else if (titlin >= 11 && titlin <= 24){
+          alert('your getting warmer...');
+
+        }
+
+        else if (titlin >= 26 && titlin <= 40){
+          alert('That number is a bit high, but you are getting closer');
+
+        }
+
+        else if (titlin >= 41 && titlin <=70){
+          alert('You are close but also way to high, try again');
+        }
+
+        else if (titlin >= 71 && titlin <= 100){
+
+          alert('uh..thats way to high...why are you even up there bro...');
+
+        } else {
+
+          if (titlin >= 101){
+
+            alert('um...wow..not even close');
+
+          }
+        }
+      }
+
+//var meow;
+//while( meow !== 25){
+//  meow = prompt("mm");
+//}
+
+
+    </script>
+
+  </body>
+</html>
